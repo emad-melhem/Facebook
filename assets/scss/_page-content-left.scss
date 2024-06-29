@@ -1,0 +1,33 @@
+.facebook-shortcuts{
+    &__shortcut{
+        @include flex(left, center, 5);
+        font-size: 1rem;
+        font-weight: 500;
+        padding: rem(10) 0;
+
+        i{
+            color: $active-color;
+            font-size: 1.4rem;
+        }
+    }
+}
+.seerator{
+    border-top: 1px solid #ccc;
+    padding: $primary-padding;
+    margin-top: $primary-padding;
+}
+
+.facebook-favorites{
+    &__shortcut{
+        @include flex(left, center, 5);
+        font-size: 1rem;
+        font-weight: 500;
+        padding: rem(5) 0;
+
+        .favorite-image{
+            img{
+                @include img-rounded(40);
+            }
+        }
+    }
+}

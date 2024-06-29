@@ -12,22 +12,48 @@ nav, .nav{
     &__middel {
         flex: 50% 0 0;
         max-width: $feed-width;
-        background-color: rgb(139, 135, 222);
     }
 
     &__right {
         flex: 25% 0 0;
         max-width: $sidebar-width;
-        background-color: rgb(69, 42, 6);
     }
 
     .input-box{
         &__text{
-            @include flex(space-between, center);
+            @include flex(space-between, center, 10px);
             label {width: 100%;}
             input{
                 @include round-box(40, #efefef);
+                width: inherit;
+                font-size: rem(15);
             }
         }
+    }
+
+    .facebook-icons{
+        @include flex(space-around, center);
+        font-size: 1.8rem;
+        color: $icon-color;
+
+        .active{
+            color: $active-color;
+        }
+    }
+    .facebook-services{
+        $facebook-services-element-size: 40;
+        @include flex(space-around, center);
+
+        .user-img{
+            @include img-rounded($facebook-services-element-size);
+        }
+
+        &__services{
+            @include flex(center, center);
+            @include circle-icone($facebook-services-element-size);
+            background-color: $icon-background-color;
+            font-size: 1.4rem;
+        }
+    
     }
 }

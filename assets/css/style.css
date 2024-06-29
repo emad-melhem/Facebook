@@ -9,33 +9,12 @@ body {
   font-family: Segoe UI Historic, Helvetica, Arial, sans-serif;
 }
 
-.page-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: top;
-  padding: 0.625rem;
-}
-.page-content__left {
-  flex: 25% 0 0;
-  max-width: 22.5rem;
-  background-color: burlywood;
-}
-.page-content__middel {
-  flex: 50% 0 0;
-  max-width: 42.5rem;
-  background-color: rgb(139, 135, 222);
-}
-.page-content__right {
-  flex: 25% 0 0;
-  max-width: 22.5rem;
-  background-color: rgb(69, 42, 6);
-}
-
 nav, .nav {
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0;
   padding: 0.625rem;
   box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.0509803922);
 }
@@ -46,17 +25,16 @@ nav__left, .nav__left {
 nav__middel, .nav__middel {
   flex: 50% 0 0;
   max-width: 42.5rem;
-  background-color: rgb(139, 135, 222);
 }
 nav__right, .nav__right {
   flex: 25% 0 0;
   max-width: 22.5rem;
-  background-color: rgb(69, 42, 6);
 }
 nav .input-box__text, .nav .input-box__text {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 nav .input-box__text label, .nav .input-box__text label {
   width: 100%;
@@ -67,4 +45,98 @@ nav .input-box__text input, .nav .input-box__text input {
   border-radius: 1.25rem;
   padding: 1.25rem;
   background-color: #efefef;
+  width: inherit;
+  font-size: 0.9375rem;
+}
+nav .facebook-icons, .nav .facebook-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  font-size: 1.8rem;
+  color: #656565;
+}
+nav .facebook-icons .active, .nav .facebook-icons .active {
+  color: #1b75e5;
+}
+nav .facebook-services, .nav .facebook-services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+}
+nav .facebook-services .user-img, .nav .facebook-services .user-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+nav .facebook-services__services, .nav .facebook-services__services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #e4e4e4;
+  font-size: 1.4rem;
+}
+
+.page-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  gap: 0;
+  padding: 0.625rem;
+}
+.page-content__left {
+  flex: 25% 0 0;
+  max-width: 22.5rem;
+}
+.page-content__middel {
+  flex: 50% 0 0;
+  max-width: 42.5rem;
+}
+.page-content__right {
+  flex: 25% 0 0;
+  max-width: 22.5rem;
+}
+
+.facebook-shortcuts__shortcut {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.625rem 0;
+}
+.facebook-shortcuts__shortcut i {
+  color: #1b75e5;
+  font-size: 1.4rem;
+}
+
+.seerator {
+  border-top: 1px solid #ccc;
+  padding: 0.625rem;
+  margin-top: 0.625rem;
+}
+
+.facebook-favorites__shortcut {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.3125rem 0;
+}
+.facebook-favorites__shortcut .favorite-image img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
