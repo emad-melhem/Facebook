@@ -1,0 +1,33 @@
+nav, .nav{
+    background-color: white;
+    @include flex(space-between, center);
+    padding: $primary-padding;
+    box-shadow: 0 rem(3) rem(8) #0000000d;
+    
+    &__left {
+        flex: 25% 0 0;
+        max-width: $sidebar-width;
+    }
+
+    &__middel {
+        flex: 50% 0 0;
+        max-width: $feed-width;
+        background-color: rgb(139, 135, 222);
+    }
+
+    &__right {
+        flex: 25% 0 0;
+        max-width: $sidebar-width;
+        background-color: rgb(69, 42, 6);
+    }
+
+    .input-box{
+        &__text{
+            @include flex(space-between, center);
+            label {width: 100%;}
+            input{
+                @include round-box(40, #efefef);
+            }
+        }
+    }
+}

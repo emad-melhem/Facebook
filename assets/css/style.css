@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Segoe UI Historic, Helvetica, Arial, sans-serif;
+}
+
+.page-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 0.625rem;
+}
+.page-content__left {
+  flex: 25% 0 0;
+  max-width: 22.5rem;
+  background-color: burlywood;
+}
+.page-content__middel {
+  flex: 50% 0 0;
+  max-width: 42.5rem;
+  background-color: rgb(139, 135, 222);
+}
+.page-content__right {
+  flex: 25% 0 0;
+  max-width: 22.5rem;
+  background-color: rgb(69, 42, 6);
+}
+
+nav, .nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem;
+  box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.0509803922);
+}
+nav__left, .nav__left {
+  flex: 25% 0 0;
+  max-width: 22.5rem;
+}
+nav__middel, .nav__middel {
+  flex: 50% 0 0;
+  max-width: 42.5rem;
+  background-color: rgb(139, 135, 222);
+}
+nav__right, .nav__right {
+  flex: 25% 0 0;
+  max-width: 22.5rem;
+  background-color: rgb(69, 42, 6);
+}
+nav .input-box__text, .nav .input-box__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .input-box__text label, .nav .input-box__text label {
+  width: 100%;
+}
+nav .input-box__text input, .nav .input-box__text input {
+  border: none;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background-color: #efefef;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+.page-content {
+    @include flex(space-between, top);
+    padding: $primary-padding;
+
+    &__left {
+        flex: 25% 0 0;
+        max-width: $sidebar-width;
+        background-color: burlywood;
+    }
+
+    &__middel {
+        flex: 50% 0 0;
+        max-width: $feed-width;
+        background-color: rgb(139, 135, 222);
+    }
+
+    &__right {
+        flex: 25% 0 0;
+        max-width: $sidebar-width;
+        background-color: rgb(69, 42, 6);
+    }
+}

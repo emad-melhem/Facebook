@@ -1,0 +1,39 @@
+@function rem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
+
+$primary_font: Segoe UI Historic, Helvetica, Arial, sans-serif;
+$primary-background: #f0f0f0;
+$primary-color: #656565;
+$icon-background-color:#e4e4e4;
+$active-color: #1b75e5;
+
+$primary-padding: rem(10);
+$sidebar-width: rem(360);
+$feed-width: rem(680);
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $primary-background;
+    font-family: $primary_font;
+}
+
+@mixin flex($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin round-box($size, $bg-color){
+    border: none;
+    height: rem($size);
+    border-radius: rem($size /2);
+    padding: rem($size /2);
+    background-color: $bg-color;
+}
