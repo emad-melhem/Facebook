@@ -19,18 +19,6 @@ nav, .nav{
         max-width: $sidebar-width;
     }
 
-    .input-box{
-        &__text{
-            @include flex(space-between, center, 10px);
-            label {width: 100%;}
-            input{
-                @include round-box(40, #efefef);
-                width: inherit;
-                font-size: rem(15);
-            }
-        }
-    }
-
     .facebook-icons{
         @include flex(space-around, center);
         font-size: 1.8rem;

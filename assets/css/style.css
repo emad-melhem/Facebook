@@ -9,6 +9,25 @@ body {
   font-family: Segoe UI Historic, Helvetica, Arial, sans-serif;
 }
 
+.input-box__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.input-box__text label {
+  width: 100%;
+}
+.input-box__text input {
+  border: none;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background-color: #efefef;
+  width: inherit;
+  font-size: 0.9375rem;
+}
+
 nav, .nav {
   background-color: white;
   display: flex;
@@ -29,24 +48,6 @@ nav__middel, .nav__middel {
 nav__right, .nav__right {
   flex: 25% 0 0;
   max-width: 22.5rem;
-}
-nav .input-box__text, .nav .input-box__text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-nav .input-box__text label, .nav .input-box__text label {
-  width: 100%;
-}
-nav .input-box__text input, .nav .input-box__text input {
-  border: none;
-  height: 2.5rem;
-  border-radius: 1.25rem;
-  padding: 1.25rem;
-  background-color: #efefef;
-  width: inherit;
-  font-size: 0.9375rem;
 }
 nav .facebook-icons, .nav .facebook-icons {
   display: flex;
@@ -84,6 +85,15 @@ nav .facebook-services__services, .nav .facebook-services__services {
   font-size: 1.4rem;
 }
 
+.facebook-contacts__contact, .facebook-pages__page, .facebook-favorites__shortcut, .facebook-shortcuts__shortcut {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .page-content {
   display: flex;
   justify-content: space-between;
@@ -104,13 +114,13 @@ nav .facebook-services__services, .nav .facebook-services__services {
   max-width: 22.5rem;
 }
 
+.seperator {
+  border-top: 1px solid #ccc;
+  padding: 0.625rem;
+  margin-top: 0.625rem;
+}
+
 .facebook-shortcuts__shortcut {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  gap: 5;
-  font-size: 1rem;
-  font-weight: 500;
   padding: 0.625rem 0;
 }
 .facebook-shortcuts__shortcut i {
@@ -118,19 +128,7 @@ nav .facebook-services__services, .nav .facebook-services__services {
   font-size: 1.4rem;
 }
 
-.seerator {
-  border-top: 1px solid #ccc;
-  padding: 0.625rem;
-  margin-top: 0.625rem;
-}
-
 .facebook-favorites__shortcut {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  gap: 5;
-  font-size: 1rem;
-  font-weight: 500;
   padding: 0.3125rem 0;
 }
 .facebook-favorites__shortcut .favorite-image img {
@@ -139,4 +137,168 @@ nav .facebook-services__services, .nav .facebook-services__services {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.facebook-sponsers__sponser {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+  margin: 0.625rem 0;
+  padding: 0.3125rem 0;
+}
+.facebook-sponsers__sponser img {
+  max-width: 7.1875rem;
+  border-radius: 0.3125rem;
+}
+.facebook-sponsers__sponser div {
+  max-height: 7.5rem;
+  content-visibility: auto;
+}
+
+.facebook-pages__page {
+  padding: 0.3125rem 0;
+}
+.facebook-pages__page img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.facebook-contacts__contact {
+  padding: 0.3125rem 0;
+}
+.facebook-contacts__contact img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.stories .story {
+  width: 6.25rem;
+  height: 11.25rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+  padding: 0.625rem;
+  margin: unset;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1254901961);
+  background-color: rgba(0, 0, 0, 0.1254901961);
+  background-blend-mode: multiply;
+}
+.stories .story img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #1b75e5;
+  outline: 1px solid white;
+}
+.stories .story__username {
+  color: white;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7215686275);
+}
+.stories .story-1 {
+  background-image: url("https://picsum.photos/id/30/100/180");
+}
+.stories .story-2 {
+  background-image: url("https://picsum.photos/id/130/100/180");
+}
+.stories .story-3 {
+  background-image: url("https://picsum.photos/id/24/100/180");
+}
+.stories .story-4 {
+  background-image: url("https://picsum.photos/id/144/100/180");
+}
+.stories .story-5 {
+  background-image: url("https://picsum.photos/id/240/100/180");
+}
+.stories .story-6 {
+  background-image: url("https://picsum.photos/id/378/100/180");
+}
+
+.create-post {
+  margin: 0.625rem;
+  padding: 0.9375rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1254901961);
+  background-color: white;
+}
+.create-post__image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.create-post__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  padding-top: 0.625rem;
+  margin-top: 0.625rem;
+  border-top: 1px solid #e4e4e4;
+}
+.create-post__buttons__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10;
+  font-size: 1.125rem;
+}
+.create-post__buttons__button span {
+  color: #656565;
+}
+.create-post__buttons__button:nth-child(1) i {
+  color: rgb(206, 153, 224);
+  font-size: 1.8rem;
+}
+.create-post__buttons__button:nth-child(2) i {
+  color: rgb(226, 12, 65);
+  font-size: 1.8rem;
+}
+.create-post__buttons__button:nth-child(3) i {
+  color: rgb(110, 25, 127);
+  font-size: 1.8rem;
+}
+.create-post__buttons__button:nth-child(4) i {
+  color: rgb(67, 16, 145);
+  font-size: 1.8rem;
+}
+.create-post__buttons__button:nth-child(5) i {
+  color: rgb(86, 82, 162);
+  font-size: 1.8rem;
+}
+.create-post__buttons__button:nth-child(6) i {
+  color: rgb(126, 62, 227);
+  font-size: 1.8rem;
+}
+.create-post__buttons__button:nth-child(7) i {
+  color: rgb(197, 166, 16);
+  font-size: 1.8rem;
+}
+.create-post__buttons__button:nth-child(8) i {
+  color: rgb(246, 39, 114);
+  font-size: 1.8rem;
+}
+.create-post__buttons__button:nth-child(9) i {
+  color: rgb(230, 68, 75);
+  font-size: 1.8rem;
 }/*# sourceMappingURL=style.css.map */

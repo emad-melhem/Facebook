@@ -1,0 +1,33 @@
+.facebook-sponsers{
+    &__sponser{
+        @include flex(space-between, flex-start);
+        margin: rem(10) 0;
+        padding: rem(5) 0;
+        img{
+            max-width: rem(115);
+            border-radius: rem(5);
+        }
+        div{
+            max-height: rem(120);
+            content-visibility: auto;
+        }
+    }
+}
+.facebook-pages{
+    &__page{
+        @extend %content-component;
+        padding: rem(5) 0;
+        img{
+            @include img-rounded(40);
+        }
+    }
+}
+.facebook-contacts{
+    &__contact{
+        @extend %content-component;
+        padding: rem(5) 0;
+        img{
+            @include img-rounded(40);
+        }
+    }
+}
